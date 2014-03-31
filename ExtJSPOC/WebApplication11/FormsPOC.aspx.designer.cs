@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication11
-{
-
-
-    public partial class _Default
-    {
+namespace WebApplication11 {
+    
+    
+    public partial class FormsPOC {
     }
 }

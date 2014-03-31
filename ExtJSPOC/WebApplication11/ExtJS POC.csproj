@@ -133,14 +133,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Bar.js" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Scripts\AlbumTree.js" />
+    <Content Include="Scripts\Forms.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -4999,6 +4999,7 @@
     <Content Include="ext\welcome\img\_bg-blue.gif" />
     <Content Include="ext\welcome\img\_welcome-bg-js4.gif" />
     <Content Include="ext\welcome\release-notes.css" />
+    <Content Include="FormsPOC.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -5315,8 +5316,12 @@
     <Content Include="ext\resources\themes\stylesheets\neptune\default\_widgets.scss" />
     <Content Include="ext\resources\themes\templates\resources\sass\config.rb" />
     <Content Include="ext\resources\themes\templates\resources\sass\my-ext-theme.scss" />
-    <Content Include="POCForm.aspx" />
     <Content Include="GridPOC.aspx" />
+    <Content Include="Scripts\ImageView.js" />
+    <Content Include="Scripts\organizer.js" />
+    <Content Include="Scripts\OrgPanel.js" />
+    <Content Include="Scripts\Tab.js" />
+    <Content Include="Scripts\WebForms\Pie.js" />
     <Content Include="TabsPOC.aspx" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\Grid.js" />
@@ -5348,23 +5353,14 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Tab.js" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -5400,29 +5396,15 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="FormsPOC.aspx.cs">
+      <DependentUpon>FormsPOC.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="FormsPOC.aspx.designer.cs">
+      <DependentUpon>FormsPOC.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="POCForm.aspx.cs">
-      <DependentUpon>POCForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="POCForm.aspx.designer.cs">
-      <DependentUpon>POCForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
